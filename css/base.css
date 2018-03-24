@@ -1,0 +1,61 @@
+/* 通用样式*/
+*,
+::before,
+::after{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+
+    /*移动端还有特殊的一点就是 点击高亮效果透明*/
+    -webkit-tap-highlight-color: transparent;
+
+    /*c3的盒子模型在 手机端中都是非常实用的  为了考虑到兼容性 所以加上前缀比较好*/
+    /*快捷输入的方式  样式 后面加上 tab*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-family: '微软雅黑',sans-serif;
+}
+
+/*input标签去掉手机端中的默认样式*/
+input{
+    border: 0;
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content:'';
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear:both;
+    display: block;
+}
+
+/*边框通用*/
+.b_l{
+    border-left: 1px solid #eeeeee;
+}
+.b_r{
+    border-right: 1px solid #eeeeee;
+}
+.b_t{
+    border-top: 1px solid #eeeeee;
+}
+.b_b{
+    border-bottom: 1px solid #eeeeee;
+}
